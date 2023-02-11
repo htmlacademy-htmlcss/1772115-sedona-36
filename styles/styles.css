@@ -12,6 +12,19 @@
   src: url("fonts\ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
+html{
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
 /*.visually-hidden {*/
 /*  position: absolute;*/
 /*  width: 1px;*/
@@ -24,13 +37,23 @@
 /*  clip: rect(0 0 0 0);*/
 /*  overflow: hidden;*/
 /*}*/
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
-  background-color: #FFFFFF;
+.navigation{
+  display: flex;
+  width: 1030px;
+  margin: 0 auto;
 }
+
+.navigation-list {
+  width: 440px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 280px;
+  margin-left: auto;
+}
+
 .navigation-list {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -45,19 +68,27 @@ body {
   color: #000000;
 }
 .hero-container {
+  flex-grow: 1;
   background-image: url("images\index-background.jpg");
   background-color: #6c94ad;
   width:1200px;
   height:485px;
   background-repeat: no-repeat;
 }
+.advertisement {
+  display: block;
+  margin: 0 auto;
+}
+
 .main-index {
   color: #000000;
   background-color: #FFFFFF;
-  images\index-background.jpg
+  background-image: url("images\index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
+
 .advantages-subtitle,.services-title, .search-hotel-title, .mailing-title {
    font-family: "PT Sans", sans-serif;
    font-weight: 700;
@@ -107,9 +138,18 @@ text-transform: uppercase;
   color:#000000;
 }
 .services-list {
+  display:flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   text-align: center;
   list-style: none;
 }
+.services-slogan {
+  display: block;
+  margin: 0 auto;
+}
+
 .services-name {
   font-family: "PT Sans", sans-serif ;
   font-weight: 700;
@@ -126,7 +166,36 @@ text-transform: uppercase;
 .services-item-house, .services-item-souvenir{
   background-color: rgba(131, 179, 211, 0.12);
 }
-
+.search-hotel {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.mailing {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #6c94ad;
+  background-size: 100% auto;
+  color: #FFFFFF;
+  background-repeat: no-repeat;
+}
+.page-footer {
+  display:flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto;
+  width: 1030px;
+  text-align: center;
+}
+.contacts-phone {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .background-box {
   background-color: #82B3D3;
   color: #FFFFFF;

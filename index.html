@@ -11,10 +11,10 @@
 <body>
 <div class="container">
 <header class="page-header">
+  <nav class="navigation">
   <a class="navigation-logo" href="index.html">
     <img class="page-heador-logo" alt="Логотип Седоны" src="images\svg\logo.svg">
   </a>
-    <nav class="navigation">
         <ul class="navigation-list">
             <li class="navigation-item">
                 <a class="navigation-link">Главная</a>
@@ -26,7 +26,6 @@
                 <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
         </ul>
-    </nav>
         <ul class="navigation-list navigation-user">
             <li class="navigation-item">
                 <a class="navigation-link" href="#">
@@ -40,10 +39,11 @@
                 <a class="navigation-link" href="#">Хочу сюда!</a>
             </li>
         </ul>
+    </nav>
 </header>
 
 <main class="main-index">
-  <figure class="hero-container">
+  <figure class="hero-container figure-index">
     <h1 class="visually-hidden">Рекламный блок Седоны</h1>
        <a class="advertisement"> <img class="advertisement" src="images\svg\welcome.svg" alt="Рекламный блок Седоны" width="458" height="352"></a>
         </figure>
@@ -78,8 +78,10 @@
         </ul>
     </section>
     <section class="services">
-        <h2 class="services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-        <p class="services-description">Опытный персонал и качественное обслуживание!</p> <!--TODO уточнить класс-->
+        <div class="services-slogan">
+          <h2 class="services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="services-description">Опытный персонал и качественное обслуживание!</p>
+        </div>
        <ul class="services-list">
            <li class="services-item services-item-house">
                <img class="services-icon" src="" alt="Дом">
@@ -136,7 +138,7 @@
     <address class="contacts-address">
      <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
  </address>
-    <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+    <p class="about-text visually-hidden">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
 </footer>
 </div>
 </body>
