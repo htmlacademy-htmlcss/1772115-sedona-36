@@ -2,14 +2,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts\ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts\ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 html{
@@ -37,6 +37,14 @@ body {
 /*  clip: rect(0 0 0 0);*/
 /*  overflow: hidden;*/
 /*}*/
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+/*навигация*/
 .navigation{
   display: flex;
   width: 1030px;
@@ -44,50 +52,43 @@ body {
 }
 
 .navigation-list {
+  display: flex;
   width: 440px;
   margin: 0;
   padding: 0;
-}
-
-.navigation-user {
-  max-width: 280px;
-  margin-left: auto;
-}
-
-.navigation-list {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  text-decoration: none;
-  text-transform: capitalize;
+  /*text-decoration-line: none;*/
   list-style: none;
 }
 .navigation-list a {
   color: #000000;
 }
-.hero-container {
+
+.navigation-user {
+  max-width: 280px;
+  margin-left: auto;
+
+}
+
+.main-container {
   flex-grow: 1;
-  background-image: url("images\index-background.jpg");
+}
+.hero-container {
+  background-image: url("../images/index-background.jpg");
   background-color: #6c94ad;
   width:1200px;
   height:485px;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .advertisement {
   display: block;
   margin: 0 auto;
 }
-
-.main-index {
-  color: #000000;
-  background-color: #FFFFFF;
-  background-image: url("images\index-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
 
 .advantages-subtitle,.services-title, .search-hotel-title, .mailing-title {
    font-family: "PT Sans", sans-serif;
@@ -105,10 +106,15 @@ body {
   text-align: center;
 }
 .advantages-list {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   list-style: none;
 }
-
+.advantages-container {
+  margin: 0;
+  padding: 0;
+}
 .advantages-title{
 font-family: "PT Sans",sans-serif;
 font-weight: 700;
@@ -128,7 +134,12 @@ text-transform: uppercase;
   background-color: #82B3D3;
   color: #FFFFFF;
  }
-
+.advantages-item-city {
+  display:flex;
+}
+.advantages-item-bridge {
+  display: flex;
+}
 .advantages-item-size,.advantages-item-tourist {
   background-color: rgba(131, 179, 211, 0.12);
   color:#000000;
@@ -167,39 +178,68 @@ text-transform: uppercase;
   background-color: rgba(131, 179, 211, 0.12);
 }
 .search-hotel {
-  display: block;
   margin: 0 auto;
   text-align: center;
+}
+.button-search-hotel {
+  text-decoration: none;
 }
 .mailing {
-  display: block;
   margin: 0 auto;
   text-align: center;
+  background-image: url("../images/background-1.jpg");
+  /*width:1200px;*/
+  /*height:412px;*/
   background-color: #6c94ad;
-  background-size: 100% auto;
   color: #FFFFFF;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
-.page-footer {
+.page-footer-container {
   display:flex;
-  justify-content: space-between;
-  padding: 0;
   margin: 0 auto;
-  width: 1030px;
-  text-align: center;
+  width: 1040px;
+}
+
+.footer-social-list {
+  display:flex;
+  margin: 0 auto;
+  list-style: none;
+}
+.footer-social-list-container{
+  max-width: 52px;
+  margin-right: 230px;
+}
+.contacts-address{
+  max-width: 331px;
+  margin-right: 230px;
 }
 .contacts-phone {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  font-style: normal;
+  }
+.logo-html{
+  max-width: 115px;
+  margin-left: auto;
 }
 .background-box {
   background-color: #82B3D3;
+  background-image: url("../images/background-2.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  /*width:1200px;*/
+  /*height:412px;*/
   color: #FFFFFF;
 
+}
+.catalog-hotel{
+  display:flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 .inner-header-subtitle {
   font-family: "PT Sans", sans-serif;
@@ -239,6 +279,6 @@ text-transform: uppercase;
   line-height: 21px;
 }
 .page-footer a {
-  background-color: #82B3D3;
-  color: #FFFFFF;
-}
+  text-decoration: none;
+  color:#000000;
+ }

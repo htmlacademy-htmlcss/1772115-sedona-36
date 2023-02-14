@@ -42,8 +42,8 @@
         </ul>
   </nav>
 </header>
-<main class="main-inner">
-  <div class="background-box">
+<main class="main-inner main-container">
+<section class="background-box">
    <header class="inner-header">
        <h1 class="inner-header-subtitle">Гостиницы Седоны</h1>
       <ul class="breadcumbs">
@@ -55,8 +55,10 @@
           </li>
       </ul>
    </header>
-<section class="catalog-hotel">
+
+<div class="catalog-hotel">
     <h2 class="visually-hidden">Каталог гостинец с фильтрами</h2>
+   <div class="form-container">
     <form class="catalog-filter" action="http://echo.htmlakademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -109,7 +111,9 @@
       <button class="button" type="submit">Сбросить</button>
     </form>
   </div>
-    <select class="select-control" aria-label="Сортировка">
+</section>
+  <section class="hotel-list">
+  <select class="select-control" aria-label="Сортировка">
       <b>Найдено гостиниц: 38</b>
         <option value="popular">Сначала популярное</option>
         <option value="cheap">Сначала дешёвое</option>
@@ -211,8 +215,8 @@
         </form>
     </section>
 </main>
-<footer class="page-footer">
-    <ul class="footer-social-list">
+<footer class="page-footer page-footer-container">
+    <ul class="footer-social-list footer-social-list-container">
         <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм</span>
@@ -232,7 +236,12 @@
     <address class="contacts-address">
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </address>
-    <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+  <figure class="logo-html">
+    <p class="about-text visually-hidden">Сделано в html academy</p>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+      <img class="logo-htmlacademy" alt="Логотип html academy" src="images\svg\logo-htmlacademy.svg">
+    </a>
+  </figure>
 </footer>
 </div>
 </body>
