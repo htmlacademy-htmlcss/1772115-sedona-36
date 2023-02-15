@@ -17,6 +17,7 @@ html{
 }
 body {
   margin: 0;
+  width: 1200px;
   display: flex;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -80,10 +81,14 @@ body {
 .hero-container {
   background-image: url("../images/index-background.jpg");
   background-color: #6c94ad;
-  width:1200px;
-  height:485px;
+  min-height: 485px;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+.figure-advertisement{
+  height:213px;
+  width: 457px;
+  margin: 0 auto;
 }
 .advertisement {
   display: block;
@@ -107,14 +112,16 @@ body {
 }
 .advantages-list {
   display: flex;
-  flex-direction: column;
+  width:1200px;
+  margin: 0;
+  padding: 0;
   text-align: center;
   list-style: none;
 }
-.advantages-container {
-  margin: 0;
-  padding: 0;
-}
+/*.advantages-container {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
 .advantages-title{
 font-family: "PT Sans",sans-serif;
 font-weight: 700;
@@ -136,9 +143,11 @@ text-transform: uppercase;
  }
 .advantages-item-city {
   display:flex;
+  min-width: 1200px;
 }
 .advantages-item-bridge {
   display: flex;
+  min-width: 1200px;
 }
 .advantages-item-size,.advantages-item-tourist {
   background-color: rgba(131, 179, 211, 0.12);
