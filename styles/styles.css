@@ -16,7 +16,7 @@ html{
   height: 100%;
 }
 body {
-  margin: 0;
+  margin: 0px 40px;
   width: 1200px;
   display: flex;
   min-height: 100%;
@@ -196,6 +196,10 @@ text-transform: uppercase;
   margin: 0;
   padding: 102px 112px 30px 112px;
 }
+.advantages-description-city,.advantages-description-bridge{
+  margin: 0;
+  padding:30px 85px 102px 85px;
+}
 .services-list {
   display:flex;
   justify-content: space-between;
@@ -223,7 +227,7 @@ text-transform: uppercase;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0;
+   margin: 0;
 }
 .services-text {
   font-family: "PT Sans", sans-serif ;
@@ -236,20 +240,19 @@ text-transform: uppercase;
 .services-item-house, .services-item-souvenir{
   background-color: rgba(131, 179, 211, 0.12);
 }
-.search-hotel {
-  margin: 0 auto;
-  text-align: center;
-}
+
 .button-search-hotel {
   text-decoration: none;
+  text-transform: uppercase;
 }
 .search-hotel-title {
   margin: 0;
-  padding: 69px 451px 20px 451px;
+ padding-bottom: 20px;
+  text-transform: uppercase;
 }
 .search-hotel-title-description {
   margin: 0;
-  padding: 0px 304px 54px 304px;
+  padding-bottom: 54px;
 }
 .mailing {
   margin: 0 auto;
@@ -261,14 +264,28 @@ text-transform: uppercase;
   color: #FFFFFF;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding: 96px 258px 104px 258px;
+
 }
 .mailing-title{
   margin: 0;
-  padding: 96px 398px 20px 398px;
+  padding-bottom: 20px;
 }
 .mailing-title-description{
   margin: 0;
-  padding: 0px 362px 54px 362px;
+  padding-bottom: 54px;
+}
+.mailing-form{
+  display: flex;
+ min-width: 648px;
+padding: 0;
+}
+.mailing-form-email{
+  min-width: 452px;
+}
+.mailing-form button{
+  min-width: 232px;
+  min-height: 52px;
 }
 .page-footer-container {
   display:flex;
@@ -335,9 +352,9 @@ text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  padding: 96px 304px;
 }
 .inner-header-subtitle {
   font-family: "PT Sans", sans-serif;
@@ -346,7 +363,7 @@ text-transform: uppercase;
   line-height: 78px;
   margin-top: 0px;
   margin-bottom: 8px;
-  padding: 0px;
+  padding: 0;
 }
 .catalog-filter-title {
   font-family: "PT Sans", sans-serif;
@@ -403,7 +420,8 @@ text-transform: uppercase;
 
 .pagination{
   display: flex;
-  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
   margin: 0;
   list-style-type: none;
 }
