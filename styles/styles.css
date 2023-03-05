@@ -122,7 +122,6 @@ body {
 }
 .main-container {
   flex-grow: 1;
-margin-bottom: -6px;
 }
 
 .hero-container {
@@ -132,6 +131,7 @@ margin-bottom: -6px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding-top: 50px;
+  margin-top: -10px;
 
 }
 .figure-advertisement{
@@ -301,7 +301,7 @@ margin: 0;
   color: #FFFFFF;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding: 96px 258px 104px 258px;
+  padding: 96px 258px 100px 258px;
 
 }
 .mailing-title{
@@ -380,6 +380,7 @@ padding: 0;
   width:1200px;
   color: #FFFFFF;
   padding: 35px 70px 70px 70px;
+  margin-top: -10px;
 }
 .search-hotel-container{
  display: flex;
@@ -468,6 +469,8 @@ padding: 0;
 }
 .catalog-filter-group{
   list-style-type:none;
+  border: none;
+  padding: 0;
 }
 .catalog-filter-group-infrastructure{
   width: 151px;
@@ -504,7 +507,6 @@ padding: 0;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
   color: #FFFFFF;
   background: #82B3D3;
   border-radius: 4px;
@@ -517,6 +519,7 @@ padding: 0;
 }
 .catalog-button-reset{
   margin-top: 30px;
+  background-color: rgba(117, 190, 218, 0.0);
 }
 /*.range-wrapper-inputs span{*/
 /* position: absolute;*/
@@ -536,7 +539,7 @@ padding: 0;
   position: relative;
   height: 4px;
   margin-top: 48px;
-  background-color: red;
+  background-color: #5E676D;
   border-radius: 2px;
 }
 .range-bar {
@@ -581,6 +584,39 @@ padding: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+}
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+.control-mark-infrastructure{
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 20%;
+  background-image: url("../images/svg/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 50%;
+
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 18px;
 }
 .container-button-view{
   display: grid;
