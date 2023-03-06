@@ -65,7 +65,7 @@
           </svg>
         </li>
           <li class="breadcumbs-item">
-              <a class="breadcumbs-link">Гостиницы</a>
+              <a class="breadcumbs-link breadcrumbs-link-state">Гостиницы</a>
           </li>
       </ul>
    </header>
@@ -141,11 +141,11 @@
           </div>
 
           <div class="range-scale">
-            <div class="range-bar" style="left: 1px; width: 226px">
-              <button class="range-toggle toggle-min">
+            <div class="range-bar" style="left: 0; width: 226px">
+              <button class="range-toggle toggle-min" type="button">
                 <span class="visually-hidden">Изменить минимальную цену.</span>
               </button>
-              <button class="range-toggle toggle-max">
+              <button class="range-toggle toggle-max" type="button">
                 <span class="visually-hidden">Изменить максимальную цену.</span>
               </button>
             </div>
@@ -298,17 +298,17 @@
     </ul>
 </section>
 
-    <section class="mailing">
-        <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-        <p class="mailing-title-description">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-        <form class="mailing-form" action="http://echo.htmlakademy.ru/" method="post">
-            <p class="mailing-form-email">
-              <label for="mailing-email"><span class="visually-hidden">Ваш e-mail</span></label>
-                <input type="text" id="mailing-email" name="mailing-email" placeholder="Ваш e-mail">
-            </p>
-            <button class="mailing-button" type="submit">Подписаться</button>
-        </form>
-    </section>
+  <section class="mailing mailing-catalog">
+    <h2 class="mailing-title">Подпишитесь на рассылку</h2>
+    <p class="mailing-title-description">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+    <form class="mailing-form" action="http://echo.htmlakademy.ru/" method="post">
+      <p class="mailing-form-email">
+        <label for="mailing-email"><span class="visually-hidden">Ваш e-mail</span></label>
+        <input class="field" type="text" id="mailing-email" name="mailing-email" placeholder="Ваш e-mail">
+      </p>
+      <button class="mailing-button" type="submit">Подписаться</button>
+    </form>
+  </section>
 </main>
   <footer class="page-footer page-footer-container">
     <ul class="footer-social-list footer-social-list-container">

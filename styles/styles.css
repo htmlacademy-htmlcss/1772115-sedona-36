@@ -16,8 +16,7 @@ html{
   height: 100%;
 }
 body {
-  margin: 0px 40px;
-  width: 1200px;
+  margin: 0;
   display: flex;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -44,9 +43,7 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-.page-header{
 
-}
 .navigation{
   display: flex;
   width:1060px;
@@ -70,9 +67,36 @@ body {
   background-color:
     rgba(117, 98, 87, 1);
 }
-.page-heador-logo{
+.navigation-item-circle{
+  position: relative;
+}
+.navigation-item-circle::after{
+  position: absolute;
+  content: "";
+  width:20px;
+  height:20px;
+  border-radius:50% ;
+  background: #7DB54F;
+  left: 20px;
+  top: 11px;
+}
+.favorites-number{
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 11px/2 + 7.5px);
+  top: calc(50% - 10px/2 - 11px);
+  color: #FFFFFF;
+
+}
+.navigation-logo{
   width:140px;
   margin-right:28px;
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 .navigation-list{
   display:flex;
@@ -132,7 +156,13 @@ body {
   background-repeat: no-repeat;
   padding-top: 50px;
   margin-top: -10px;
+  position: relative;
 
+}
+.hero-container::after{
+  content: url("../images/svg/polygonal.svg");
+  position: absolute;
+  top:428px;
 }
 .figure-advertisement{
   height:213px;
@@ -144,6 +174,31 @@ body {
   margin: 0 auto;
   margin-bottom: 83px;
 }
+.advantages-description{
+  position: relative;
+}
+
+.decorative-line-white::before{
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  right: 50%;
+  margin-right: -30px;
+  top: -1px;
+}
+.decorative-line-grey::before{
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 50%;
+  margin-right: -30px;
+  top: -1px;
+}
+
 .advantages-subtitle {
     padding: 69px 290px 25px 290px;
 }
@@ -304,6 +359,10 @@ margin: 0;
   padding: 96px 258px 100px 258px;
 
 }
+.mailing-catalog{
+ background-image: rgba(255, 255, 255, 1);
+
+}
 .mailing-title{
   margin: 0;
   padding-bottom: 20px;
@@ -458,6 +517,17 @@ padding: 0;
 .breadcumbs-item-arrow{
   padding-right: 11px;
 }
+/*.breadcrumbs-link:hover .breadcumbs-link-home{*/
+/*  fill: rgba(255, 255, 255, 0.6);*/
+/*}*/
+
+/*.breadcrumbs-link:focus .breadcumbs-link-home{*/
+/*  fill: #FFFFFF;*/
+/*}*/
+
+/*.breadcrumbs-link:active .breadcumbs-link-home{*/
+/*  fill: rgba(255, 255, 255, 0.3);*/
+/*}*/
 
 .catalog-filter{
   display: flex;
@@ -599,10 +669,25 @@ padding: 0;
   border: none;
   background: #FFFFFF;
   border-radius: 20%;
+
+}
+.control-input:focus + .control-mark-infrastructure{
   background-image: url("../images/svg/check-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
+  outline: 3px solid #68a2ca;
 }
+.control-input:hover + .control-mark-infrastructure,
+.control-input:hover + .control-mark
+{
+  outline: none;
+  opacity:0.5;
+}
+/*.checkbox-item[type="checkbox"]:hover+.control-mark,*/
+/*.radio-item[type="radio"]:hover+.control-mark{*/
+/*  outline: none;*/
+/*  opacity:0.5;*/
+/*}*/
 .control-mark {
   position: absolute;
   top: 2px;
@@ -614,10 +699,53 @@ padding: 0;
   border-radius: 50%;
 
 }
+/*.control:hover .control-mark {*/
+/*  background: #F2F2F2;*/
+/*}*/
 
+.control-input:focus + .control-mark {
+  outline: 3px solid #68a2ca;
+}
+.control-input:focus + .control-mark:after{
+  content:"";
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  background-color: #3F5E72;
+  position: absolute;
+  right:5px;
+  bottom:5px;
+}
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 18px;
 }
+.range-wrapper-inputs{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.range-input{
+  width: 143px;
+  padding:12px 20px;
+  box-sizing: border-box;
+  font:inherit;
+  line-height: 24px;
+  font-weight: 700;
+  background-color: #F2F2F2;
+}
+.range-input:hover{
+  background-color: #E6E6E6;
+}
+.range-input:active{
+  outline: 2px solid #000000;
+}
+
+.range-input:disabled,
+.range-toggle:disabled{
+  opacity: 0.5;
+  cursor: default;}
+
 .container-button-view{
   display: grid;
   grid-template-columns: repeat(3,48px);
