@@ -23,7 +23,7 @@
           <a class="navigation-link" href="#">О Cедоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -33,7 +33,7 @@
           </a>
         </li>
         <li class="navigation-item navigation-item-user">
-          <a class="navigation-link navigation-link-user navigation-icon navigation-item-heart" href="#">
+          <a class="navigation-link navigation-link-user navigation-icon navigation-item-heart navigation-item-circle" href="#">
             <span class="visually-hidden">Отложено</span>
             <span class="favorites-number">12</span>
           </a>
@@ -65,7 +65,7 @@
           </svg>
         </li>
           <li class="breadcumbs-item">
-              <a class="breadcumbs-link">Гостиницы</a>
+              <a class="breadcumbs-link breadcrumbs-link-state">Гостиницы</a>
           </li>
       </ul>
    </header>
@@ -78,20 +78,23 @@
             <ul class="catalog-filter-list"></ul>
             <li class="catalog-filter-item">
             <label class="control">
-                <input class="control-input" type="checkbox" name="swimming-pool">
-                Бассейн
+                <input class="visually-hidden control-input" type="checkbox" name="swimming-pool">
+              <span class="control-mark-infrastructure"></span>
+              <span class="control-label"> Бассейн</span>
             </label>
             </li>
             <li class="catalog-filter-item">
                 <label class="control">
-                    <input class="control-input" type="checkbox" name="parking">
-                    Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="parking">
+                  <span class="control-mark-infrastructure"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
             </li>
             <li class="catalog-filter-item">
                 <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-Fi">
-                    Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                  <span class="control-mark-infrastructure"></span>
+                  <span class="control-label"> Wi-Fi</span>
                 </label>
             </li>
             </ul>
@@ -102,20 +105,23 @@
             <ul class="catalog-filter-list"></ul>
             <li class="catalog-filter-item">
                 <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing">
-                    Гостиница
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Гостиница</span>
                 </label>
             </li>
             <li class="catalog-filter-item">
                 <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing">
-                    Мотель
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing">
+                  <span class="control-mark"></span>
+                  <span class="control-label"> Мотель</span>
                 </label>
             </li>
             <li class="catalog-filter-item">
                 <label class="control">
-                    <input class="control-input" type="radio" name="type-of-housing">
-                    Апартаменты
+                    <input class="visually-hidden control-input" type="radio" name="type-of-housing">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Апартаменты</span>
                 </label>
             </li>
             </ul>
@@ -135,11 +141,11 @@
           </div>
 
           <div class="range-scale">
-            <div class="range-bar" style="left: 1px; width: 226px">
-              <button class="range-toggle toggle-min">
+            <div class="range-bar" style="left: 0; width: 226px">
+              <button class="range-toggle toggle-min" type="button">
                 <span class="visually-hidden">Изменить минимальную цену.</span>
               </button>
-              <button class="range-toggle toggle-max">
+              <button class="range-toggle toggle-max" type="button">
                 <span class="visually-hidden">Изменить максимальную цену.</span>
               </button>
             </div>
@@ -165,7 +171,7 @@
  </div>
     <div class="container-button-view">
      <a  class="button button-view button-light" href="#">
-       <div class="view"> <span class="visually-hidden">Показать список</span>
+        <span class="visually-hidden">Показать список</span>
        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
          <path d="M4 0H0V6H4V0Z" fill="black"/>
          <path d="M16 0H12V6H16V0Z" fill="black"/>
@@ -173,20 +179,20 @@
          <path d="M4 8H0V14H4V8Z" fill="black"/>
          <path d="M16 8H12V14H16V8Z" fill="black"/>
          <path d="M10 8H6V14H10V8Z" fill="black"/>
-       </svg></div>
+       </svg>
 
      </a>
       <a class="button button-view button-card" href="#">
-        <span class="visually-hidden">Показать карточки</span>
-      <div class="view">  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="visually-hidden">Показать одну карточку с описанием</span>
+     <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M16 12H0V14H16V12Z" fill="black"/>
           <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
-        </svg></div>
+        </svg>
 
       </a>
     <a class="button button-view button-card" href="#">
         <span class="visually-hidden">Показать карточки</span>
-      <div class="view"> <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2 0H0V2H2V0Z" fill="black"/>
         <path d="M16 0H4V2H16V0Z" fill="black"/>
         <path d="M2 4H0V6H2V4Z" fill="black"/>
@@ -195,7 +201,7 @@
         <path d="M16 8H4V10H16V8Z" fill="black"/>
         <path d="M2 12H0V14H2V12Z" fill="black"/>
         <path d="M16 12H4V14H16V12Z" fill="black"/>
-      </svg></div>
+      </svg>
 
     </a>
     </div>
@@ -283,8 +289,8 @@
       <li class="pagination-item">
         <a class="pagination-link" href="#">4</a>
       </li>
-        <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+        <li class="pagination-item ">
+            <a class="pagination-link pagination-item-points" href="#">...</a>
         </li>
         <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -292,17 +298,17 @@
     </ul>
 </section>
 
-    <section class="mailing">
-        <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-        <p class="mailing-title-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="mailing-form" action="http://echo.htmlakademy.ru/" method="post">
-            <p class="mailing-form-email">
-              <label for="mailing-email"><span class="visually-hidden">Ваш e-mail</span></label>
-                <input type="text" id="mailing-email" name="mailing-email" placeholder="Ваш e-mail">
-            </p>
-            <button class="mailing-button" type="submit">Подписаться</button>
-        </form>
-    </section>
+  <section class="mailing mailing-catalog">
+    <h2 class="mailing-title">Подпишитесь на рассылку</h2>
+    <p class="mailing-title-description">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+    <form class="mailing-form" action="http://echo.htmlakademy.ru/" method="post">
+      <p class="mailing-form-email">
+        <label for="mailing-email"><span class="visually-hidden">Ваш e-mail</span></label>
+        <input class="field" type="text" id="mailing-email" name="mailing-email" placeholder="Ваш e-mail">
+      </p>
+      <button class="mailing-button" type="submit">Подписаться</button>
+    </form>
+  </section>
 </main>
   <footer class="page-footer page-footer-container">
     <ul class="footer-social-list footer-social-list-container">
@@ -344,5 +350,6 @@
     </a>
   </footer>
 </div>
+
 </body>
 </html>
