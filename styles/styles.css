@@ -1639,6 +1639,6 @@ margin-bottom: 23px;
 }
 
 /*Скрывает или показывает модальное окно*/
-/*.modal-container {*/
-/*display: none;*/
-/*}*/
+.modal-container {
+display: none;
+}
