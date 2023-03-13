@@ -230,7 +230,7 @@ body {
 }
 
 .advantages-subtitle {
-  padding: 69px 290px 25px 290px;
+  padding: 69px 287px 25px 286px;
 }
 .advantages-subtitle-description {
   padding-bottom: 69px;
@@ -493,7 +493,7 @@ body {
 }
 
 .contacts-address{
-  width: 331px;
+  width: 333px;
 }
 
 .contacts-phone {
@@ -850,15 +850,14 @@ body {
   border-radius: 20%;
 
 }
-.control-input:focus + .control-mark-infrastructure{
+.control-input[type="checkbox"]:focus + .control-mark-infrastructure{
   background-image: url("../images/svg/check-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
   outline: 3px solid #68a2ca;
 }
-.control-input:hover + .control-mark-infrastructure,
-.control-input:hover + .control-mark
-{
+.control-input[type="checkbox"]:hover + .control-mark-infrastructure,
+.control-input[type="radio"]:hover + .control-mark {
   outline: none;
   opacity:0.5;
 }
@@ -882,7 +881,7 @@ body {
 /*  background: #F2F2F2;*/
 /*}*/
 
-.control-input:focus + .control-mark {
+.control-input[type="radio"]:focus + .control-mark {
   outline: 3px solid #68a2ca;
 }
 .control-input:focus + .control-mark:after{
@@ -1383,19 +1382,18 @@ body {
   width: 137px;
 }
 .name-field-departure{
-
-  margin-top: 38px;
+  margin-top: 12px;
   width: 137px;
 }
 .name-field-adults{
   width: 137px;
-  margin-top: 20px;
+  margin-top: 12px;
 
 }
 .name-field-children{
   width: 105px;
-  margin-right: 18px;
-  margin-left: 77px;
+  margin-right: 28px;
+  margin-left: 87px;
   margin-top: 12px;
   position: relative;
 }
@@ -1440,19 +1438,7 @@ body {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-.name-field-children::after{
-  position: absolute;
-  content: "";
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: #83B3D3;
-  background-image: url("../images/svg/info.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  left: 60px;
 
-}
 .field{
   width: 30px;
   text-align: center;
@@ -1471,7 +1457,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 48px;
+  margin-bottom: 25px;
 }
 .auth-form-register{
   display: inline-block;
@@ -1506,11 +1492,10 @@ body {
 }
 
 .modal-content :valid{
-/font-family:"PT Sans", sans-serif;
+font-family:"PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
 }
 
 .modal-title{
@@ -1535,21 +1520,26 @@ body {
 }
 .message-red{
   color: #ff5757;
+  margin-top: 4px;
+}
+.message{
+  margin-top: 4px;
 }
 .field-group{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
+margin-bottom: 23px;
 }
 
 .date-message-red{
   width: calc(100% - 137px);
-  margin: 0;
+  margin:0;
   padding: 0;
 }
 .date-message{
   width: calc(100% - 137px);
+  margin: 0;
 }
 .button-icon {
   fill: rgba(117, 97, 87, 0.3);
@@ -1567,7 +1557,88 @@ body {
 
 .button-icon:focus {
   outline: none;}
-/*Скрывает или показывает модальное окно*/
-.modal-container {
-display: none;
+/* tooltip */
+.tooltip-toggle {
+  border: none;
+  background-color: #83b3d3;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 50%;
+  margin-right: -151px;
+  top: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  width: 256px;
+  border-radius: 10px;
+  padding: 20px 21px;
+  position: absolute;
+  right: 50%;
+  margin-right: -265px;
+  z-index: 1;
+  top: 52px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip-text-close {
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text-close,
+.tooltip-toggle:focus + .tooltip-text-close {
+  display: block;
+}
+
+.tooltip-toggle:focus {
+  outline: none;
+}
+
+.tooltip-text::after {
+  content: "";
+  background-image: url("../images/svg/tooltip-vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  top: -9px;
+  right: 50%;
+  margin-right: -10px;
+}
+
+.form-label-icon {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  margin-left: 10px;
+  width: 26px;
+  height: 26px;
+}
+
+/*Скрывает или показывает модальное окно*/
+/*.modal-container {*/
+/*display: none;*/
+/*}*/
