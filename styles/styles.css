@@ -29,6 +29,9 @@ body {
   background-color: #F2F2F2;
   position: relative;
 }
+img{
+  max-width: 100%;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
