@@ -232,7 +232,7 @@ img{
 }
 .advantages-description-size, .advantages-description-road, .advantages-description-tourist{
   margin: 0;
-  padding: 34px 85px 112px 85px;
+  padding: 34px 83px 112px 85px;
 }
 .advantages-subtitle,.services-title, .search-hotel-title, .mailing-title {
   font-family: "PT Sans", sans-serif;
@@ -332,6 +332,9 @@ img{
 }
 .services-icon {
   padding: 76px 161px 25px 163px;
+}
+.services-item{
+  width: 400px;
 }
 .services-name {
   font-family: "PT Sans", sans-serif ;
